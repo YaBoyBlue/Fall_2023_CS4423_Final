@@ -17,10 +17,7 @@ public class KeyInput : MonoBehaviour
     {
         Vector3 vect = new Vector3(0, 0, 0);
 
-        if (Input.GetKey(KeyCode.A)) { vect.x = -5; }
-        if (Input.GetKey(KeyCode.D)) { vect.x =  5; }
-        if (Input.GetKey(KeyCode.W)) { vect.y =  5; }
-        if (Input.GetKey(KeyCode.S)) { vect.y = -5; }
+        if (Input.GetKey(KeyCode.Space)) { vect.y = 1; }
 
         movement.Move(vect);
     }
